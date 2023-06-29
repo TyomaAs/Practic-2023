@@ -31,3 +31,12 @@ body {
 .footer {
 	min-width: 100%;
 }
+
+*.hidden {
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+
+*.visible {
+	opacity: 1 !important;
+}
