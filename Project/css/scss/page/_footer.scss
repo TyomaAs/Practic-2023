@@ -2,6 +2,7 @@
 	min-height: auto;
 	background-color: $secondary;
 	color: $white;
+	width: 100%;
 
 	.container {
 		height: 100%;
@@ -41,6 +42,9 @@
 		align-items: center;
 		column-gap: 45px;
 		row-gap: 15px;
+		&-item a:hover {
+			text-shadow: 0 0 5px $white;
+		}
 		@media (max-width: $mobile-max) {
 			flex-direction: column;
 		}
