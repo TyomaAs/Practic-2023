@@ -5,6 +5,14 @@
 	.welcome {
 		min-height: auto;
 		margin: 0 0 30px 0;
+		&.hidden {
+			opacity: 0;
+			transition: opacity 0.5s;
+		}
+
+		&.visible {
+			opacity: 1;
+		}
 		.container {
 			display: flex;
 			justify-content: space-between;
@@ -143,6 +151,15 @@
 		}
 	}
 	.portfolio {
+		&.hidden {
+			opacity: 0;
+			transition: opacity 0.5s;
+		}
+
+		&.visible {
+			opacity: 1;
+		}
+
 		margin: 60px 0 0 0;
 		.container {
 			display: flex;
@@ -238,6 +255,14 @@
 			}
 		}
 		&-next {
+			&.hidden {
+				opacity: 0;
+				transition: opacity 0.5s;
+			}
+
+			&.visible {
+				opacity: 1;
+			}
 			margin: 120px 0;
 			.container {
 				display: flex;
@@ -277,6 +302,14 @@
 		}
 	}
 	.block {
+		&.hidden {
+			opacity: 0;
+			transition: opacity 0.5s;
+		}
+
+		&.visible {
+			opacity: 1;
+		}
 		position: relative;
 		overflow-x: hidden;
 		.container {
@@ -319,6 +352,7 @@
 			flex-direction: column;
 			width: 100%;
 			position: relative;
+
 			&.awards {
 				display: flex;
 				flex-direction: column;
@@ -427,10 +461,6 @@
 								max-width: 450px !important;
 								flex: 1 1 auto;
 								width: 90vw;
-							}
-							@media (max-width: $mobile-max) {
-								img {
-								}
 							}
 						}
 						@media (max-width: $laptop-max) {

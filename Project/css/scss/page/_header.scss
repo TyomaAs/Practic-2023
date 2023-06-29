@@ -1,5 +1,5 @@
 .header {
-	min-height: 96px;
+	min-height: 95px;
 	transition: 0.3s background-color, color ease-in-out;
 	background-color: #0000;
 	position: fixed;
@@ -17,8 +17,8 @@
 		justify-content: space-between;
 		align-items: center;
 	}
-	@media (max-width: $mobile-max) {
-		min-height: 60px;
+	@media (max-width: $tablet-max) {
+		min-height: 50px;
 	}
 
 	&.scrolled {

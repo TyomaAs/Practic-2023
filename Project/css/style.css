@@ -84,7 +84,7 @@ body._active {
 }
 
 .header {
-  min-height: 96px;
+  min-height: 95px;
   transition: 0.3s background-color, color ease-in-out;
   background-color: rgba(0, 0, 0, 0);
   position: fixed;
@@ -103,9 +103,9 @@ body._active {
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .header {
-    min-height: 60px;
+    min-height: 50px;
   }
 }
 .header.scrolled {
@@ -357,6 +357,13 @@ body._active {
   min-height: auto;
   margin: 0 0 30px 0;
 }
+.main .welcome.hidden {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.main .welcome.visible {
+  opacity: 1;
+}
 .main .welcome .container {
   display: flex;
   justify-content: space-between;
@@ -515,6 +522,13 @@ body._active {
 .main .portfolio {
   margin: 60px 0 0 0;
 }
+.main .portfolio.hidden {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.main .portfolio.visible {
+  opacity: 1;
+}
 .main .portfolio .container {
   display: flex;
   justify-content: space-evenly;
@@ -626,6 +640,13 @@ body._active {
 .main .portfolio-next {
   margin: 120px 0;
 }
+.main .portfolio-next.hidden {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.main .portfolio-next.visible {
+  opacity: 1;
+}
 .main .portfolio-next .container {
   display: flex;
   flex-direction: row;
@@ -668,6 +689,13 @@ body._active {
 .main .block {
   position: relative;
   overflow-x: hidden;
+}
+.main .block.hidden {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.main .block.visible {
+  opacity: 1;
 }
 .main .block .container {
   display: flex;
