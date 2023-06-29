@@ -277,6 +277,8 @@
 		}
 	}
 	.block {
+		position: relative;
+		overflow-x: hidden;
 		.container {
 			display: flex;
 			flex-direction: column;
@@ -617,7 +619,7 @@
 				align-items: center;
 				min-height: 180px;
 				padding: 15px 0;
-				@media (max-width: $tablet-max) {
+				@media (max-width: $laptop-max) {
 					flex-direction: column;
 					align-items: center;
 				}
@@ -635,7 +637,7 @@
 
 					input[type="text"] {
 						border: 1px solid $secondary;
-						flex: 0 0 auto;
+						flex: 0 1 auto;
 						background-color: transparent;
 						height: 56px;
 						padding: 0 15px;
@@ -651,12 +653,12 @@
 							transition: 0.3s all ease-in-out;
 							color: $secondary;
 						}
-						@media (max-width: $tablet-max) {
+						@media (max-width: $desktop-max) {
 							flex: 0 1 auto;
 							max-width: 100%;
 						}
 					}
-					@media (max-width: $tablet-max) {
+					@media (max-width: $desktop-max) {
 						flex-wrap: wrap;
 						align-items: center;
 						padding: 15px;
@@ -672,7 +674,7 @@
 					&:hover {
 						background-color: $additional;
 					}
-					@media (max-width: $tablet-max) {
+					@media (max-width: $desktop-max) {
 						width: 100%;
 					}
 				}
