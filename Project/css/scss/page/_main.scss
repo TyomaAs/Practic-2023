@@ -197,6 +197,15 @@
 					font-size: 46px;
 					line-height: 54px;
 				}
+				@media (max-width: $mobile-max) {
+					font-size: 30px;
+					line-height: 42px;
+				}
+			}
+			&-subtitle {
+				@media (max-width: $tablet-max) {
+					font-size: 0.9em;
+				}
 			}
 		}
 		&__body {
@@ -217,14 +226,20 @@
 					font-size: 24px;
 					line-height: 32px;
 				}
+				@media (max-width: $mobile-max) {
+					font-size: 20px;
+					line-height: 24px;
+				}
 			}
 			&-subtitle {
 				font-size: 18px;
 				line-height: 32px;
 				margin: 35px 0 25px 0;
+
 				@media (max-width: $tablet-max) {
 					font-size: 16px;
 					line-height: 28px;
+					margin: 20px 0 15px 0 !important;
 				}
 			}
 			&-info {
@@ -420,6 +435,9 @@
 				max-width: 100%;
 
 				gap: 90px;
+				@media (max-width: $tablet-max) {
+					gap: 40px;
+				}
 				.portfolio {
 					&__row {
 						display: flex;
@@ -434,6 +452,7 @@
 						}
 						@media (max-width: $laptop-max) {
 							flex-direction: column-reverse !important;
+							gap: 10px;
 						}
 					}
 					&__col {
@@ -487,7 +506,9 @@
 							text-align: center;
 						}
 						@media (max-width: $mobile-max) {
-							font-size: 36px;
+							font-size: 30px;
+							line-height: 42px;
+							margin: 15px 0 20px 0;
 						}
 					}
 				}
